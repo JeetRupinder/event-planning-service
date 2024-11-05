@@ -3,44 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Planning Services</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Event Planning Service</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-<header>
-    <h1>Event Planning Services</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Our Services</a></li>
-		<li><a href="birthday.html">Birthday Parties</a></li>
-                <li><a href="corporate.html">Corporate Events</a></li>
-                <li><a href="private.html">Private Parties</a></li>
-                <li><a href="wedding.html">Weddings</a></li>
-            <li><a href="budget.html">Budget Calculator</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
-</header>
+    <header class="header">
+        <h1 style="color: white;">Event Planning Service</h1>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#calculator">Budget Calculator</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main>
-    <section class="carousel">
-        <img class="carousel-image active" src="event1.jpg" alt="Event 1" />
-        <img class="carousel-image" src="event2.jpg" alt="Event 2" />
-        <img class="carousel-image" src="event3.jpg" alt="Event 3" />
-        <img class="carousel-image" src="event4.jpg" alt="Event 4" />
-    </section>
-    
-    <section class="intro">
-        <h2>Plan Your Perfect Event</h2>
-        <p>We help you create unforgettable memories with personalized event planning services.</p>
-    </section>
-</main>
+    <main>
+        <section id="services" class="fade-in">
+            <h2>Our Services</h2>
+            <p>We offer a variety of event planning services including weddings, corporate events, and parties.</p>
+            <div class="service-images">
+                <img src="wedding.jpg" alt="Wedding Planning">
+                <img src="corporate.jpg" alt="Corporate Event">
+                <img src="birthday.jpg" alt="Birthday Party">
+                <img src="party.jpg" alt="Private Function">
+            </div>
+            <ul>
+                <li>Wedding Planning</li>
+                <li>Corporate Events</li>
+                <li>Birthday Parties</li>
+                <li>Private Functions</li>
+            </ul>
+        </section>
 
-<footer>
-    <p>&copy; 2024 Event Planning Services. All rights reserved.</p>
-</footer>
+        <section id="calculator" class="fade-in">
+            <h2>Budget Calculator</h2>
+            <form id="budgetForm">
+                <label for="eventType">Select Event Type:</label>
+                <select id="eventType">
+                    <option value="wedding">Wedding</option>
+                    <option value="corporate">Corporate Event</option>
+                    <option value="birthday">Birthday Party</option>
+                </select>
 
-<script src="script.js"></script>
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" min="1" required>
+
+                <button type="submit">Calculate Budget</button>
+            </form>
+            <div id="result" class="result"></div>
+        </section>
+
+        <section id="contact" class="fade-in">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Event Planning Service</p>
+    </footer>
+
+    <script src="Script.js"></script>
 </body>
 </html>
