@@ -2,11 +2,28 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #4b0f9d; 
+    background-color: #FFFFFF; 
+}
 }
 
+/* Logo container for positioning */
+.logo-container {
+    margin-right: 20px; /* Add space between logo and other content */
+}
+
+/* Logo styling */
+.logo {
+    width: 100px; /* Set width to control logo size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Optional: style for h1 in header */
+header h1 {
+    font-size: 1.5rem;
+    color: #333;
+}
 header {
-    background-color: #ff7f50; 
+    background-color: #000000; 
     color: white;
     padding: 20px;
     text-align: center;
